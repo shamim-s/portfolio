@@ -17,7 +17,7 @@ const ProjectCard = ({project}) => {
         picture} = project;
   return (
     <div>
-      <div data-aos="zoom-out" className="mt-5 hover:border-2 border-primary rounded-2xl transition-transform">
+      <div data-aos="zoom-in-up" className="mt-5 hover:border-2 border-primary rounded-2xl transition-transform">
         <div className="flex lg:flex-row flex-col justify-between items-center card card-side bg-base-100 shadow-xl">
           <img src={picture} alt="Movie" className="lg:w-1/2 rounded-2xl" />
           <div className="card-body">
