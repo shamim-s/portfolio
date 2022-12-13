@@ -61,7 +61,7 @@ const Hero = () => {
               value: "#000dff",
             },
             links: {
-              color: "#000dff",
+              color: "#0dff",
               distance: 180,
               enable: true,
               opacity: 0.5,

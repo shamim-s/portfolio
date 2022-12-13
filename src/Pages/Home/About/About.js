@@ -5,19 +5,17 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: false }}
+    <div 
+      data-aos="fade-right"
       id="about-me"
-      className="mt-10"
+      className="mt-10 p-4"
     >
       <h1 className="text-2xl font-bold text-center text-primary">About Me</h1>
       <div className="lg:flex justify-center items-center">
         <div className="lg:w-1/4 w-72 mx-auto">
           <img src={image} alt="" className="mask mask-circle mx-auto" />
         </div>
-        <div className="lg:w-1/2 w-screen p-4">
+        <div className="lg:w-1/2 w-full">
           <p>
             Hi, I am Shamim Sarkar. I'm a Full-Stack Web Developer. I have done
             many full-stack projects with React.js, Node.js, Express.js,
@@ -31,7 +29,7 @@ const About = () => {
         Skills
       </h1>
       <Skills />
-    </motion.div>
+    </div>
   );
 };
 

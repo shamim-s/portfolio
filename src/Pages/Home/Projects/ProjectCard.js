@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 const ProjectCard = ({project}) => {
     const {
@@ -13,8 +17,8 @@ const ProjectCard = ({project}) => {
         picture} = project;
   return (
     <div>
-      <div className="mt-5 hover:border-2 border-primary rounded-2xl transition-transform">
-        <div className="flex lg:flex-row flex-col justify-between items-center card card-side bg-base-100 shadow-xl p-4">
+      <div data-aos="zoom-out" className="mt-5 hover:border-2 border-primary rounded-2xl transition-transform">
+        <div className="flex lg:flex-row flex-col justify-between items-center card card-side bg-base-100 shadow-xl">
           <img src={picture} alt="Movie" className="lg:w-1/2 rounded-2xl" />
           <div className="card-body">
             <h2 className="card-title text-2xl">{name}</h2>
